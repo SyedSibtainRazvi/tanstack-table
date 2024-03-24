@@ -37,6 +37,7 @@ const defaultColumn: Partial<ColumnDef<Person>> = {
     useEffect(() => {
       setValue(initialValue);
     }, [initialValue]);
+    console.log("cell render", id, index);
 
     return (
       <input
